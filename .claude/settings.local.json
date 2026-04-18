@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const p = require\\(''./package.json''\\); const deps = {...p.dependencies, ...p.devDependencies}; console.log\\(''zod:'', deps.zod\\); console.log\\(''@ai-sdk/react:'', deps[''@ai-sdk/react'']\\);\")",
+      "Bash(node -e \"console.log\\(require\\(''./node_modules/zod/package.json''\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\(''./node_modules/@ai-sdk/react/package.json''\\).version\\)\")",
+      "mcp__playwright"
+    ]
+  }
+}
